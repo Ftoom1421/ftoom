@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class shooting : MonoBehaviour
 {
+    private const double V = 0.0;
     [SerializeField] private GameObject m_bullet;
 
     // Start is called before the first frame update
@@ -17,11 +18,7 @@ public class shooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            InvokeRepeating("Shoot", 0.08f, 0.5f);
-        }
-        if (Input.GetKeyUp(KeyCode.F))
-        {
-            CancelInvoke();
+            Invoke("Shoot", 0.5f);
         }
     }
 

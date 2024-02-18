@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework.Interfaces;
 using UnityEngine;
 
 public class Move : MonoBehaviour
@@ -13,9 +14,9 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 vec2 = new Vector3(1, 2, 3);
 
     }
+
     void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.UpArrow))
