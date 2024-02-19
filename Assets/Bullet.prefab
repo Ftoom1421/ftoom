@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3253694107169951547}
   - component: {fileID: 2250263843996839483}
   - component: {fileID: 2804505227286418708}
-  - component: {fileID: 1655513291411106406}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -108,18 +107,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1655513291411106406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5891868872763348351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16ce45a4db7ccf94fba2cdfdde2f5c7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8182913500062522198
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,11 +116,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5037465737647718913}
-  - component: {fileID: 4559411157118464792}
+  - component: {fileID: -7286499554523728282}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_TagString: Respawn
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -153,7 +140,7 @@ Transform:
   - {fileID: 6947024796562384290}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4559411157118464792
+--- !u!114 &-7286499554523728282
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,7 +149,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8182913500062522198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72683b3bc746224b9cfffbbb74b2c7e, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d16e7d24f3c4b443a51216b8b796dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_bullet: {fileID: 8182913500062522198}

@@ -7,6 +7,8 @@ public class shooting : MonoBehaviour
     private const double V = 0.0;
     [SerializeField] private GameObject m_bullet;
 
+    [SerializeField] private Transform bulletsspawnpoint;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,13 +20,13 @@ public class shooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Invoke("Shoot", 0.5f);
+            InvokeRepeating("Shoot", 0.0f, 0.5f);
         }
     }
 
     private void Shoot()
     {
-        Instantiate(m_bullet, transform.position, Quaternion.identity);
+        Instantiate(m_bullet, bulletsspawnpoint.position, Quaternion.identity);
 
     }
 }
