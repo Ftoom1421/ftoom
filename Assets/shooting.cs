@@ -20,7 +20,7 @@ public class shooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            InvokeRepeating("Shoot", 0.0f, 0.5f);
+            Invoke("Shoot", 0.0f);
         }
     }
 

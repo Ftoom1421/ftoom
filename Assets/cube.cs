@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using UnityEngine;
 
 public class cube : MonoBehaviour
 {
 
-    public Rigidbody rb;
+    private Rigidbody rb;
 
     public float forwardForce = -2000f;
     public float sidewaysForce = 500f;
@@ -13,7 +14,7 @@ public class cube : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
     }
 
     // We marked this as "Fixed"Update because we
