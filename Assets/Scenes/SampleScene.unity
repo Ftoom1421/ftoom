@@ -1283,7 +1283,7 @@ Transform:
   m_GameObject: {fileID: 152891516}
   serializedVersion: 2
   m_LocalRotation: {x: -0.033292603, y: -0.029455176, z: -0.011882127, w: 0.9989409}
-  m_LocalPosition: {x: 16.35, y: 2.56, z: 13.12}
+  m_LocalPosition: {x: 17.88, y: 2.53, z: 13.21}
   m_LocalScale: {x: 1.1231681, y: 4.2697644, z: 1.1224071}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1298,10 +1298,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 152891516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 346d1fff86ad38045aeb775659898ea1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5391e66e77ea2e54e8c60e363b2ac79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {fileID: 0}
+  enemy: {fileID: 0}
+  Player: {fileID: 99688485}
+  time: 5
+  enemyBullet: {fileID: 584006901}
+  spawnPoint: {fileID: 957645432}
 --- !u!1001 &175803360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4381,13 +4385,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815367304}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.033292603, y: -0.029455176, z: -0.011882127, w: 0.9989409}
-  m_LocalPosition: {x: 20.42, y: 3.23, z: 11.66}
+  m_LocalRotation: {x: -0.050090842, y: -0.03229556, z: -0.006153332, w: 0.99820346}
+  m_LocalPosition: {x: 19.57, y: 3.26, z: 11.61}
   m_LocalScale: {x: 1.224879, y: 3.0161545, z: 1.1224071}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -3.854, y: -3.336, z: -1.251}
+  m_LocalEulerAnglesHint: {x: -5.762, y: -3.68, z: -0.521}
 --- !u!54 &815367309
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4413,7 +4417,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &815367310
 MonoBehaviour:
@@ -4424,11 +4428,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 815367304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351bf0e81daf0d6458f289826931175d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e34030e36523804099b1bcb9c46f7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardForce: -200
-  sidewaysForce: 1500
+  distanceFormCenter: 5
+  target: {fileID: 1092625953}
 --- !u!1001 &827726614
 PrefabInstance:
   m_ObjectHideFlags: 0
