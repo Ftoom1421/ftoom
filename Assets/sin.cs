@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class sin : MonoBehaviour
 {
@@ -11,12 +12,13 @@ public class sin : MonoBehaviour
     public float speed;
     public float magniute;
 
-    private void Update()
+
+    public void Update()
     {
         float cycle = Time.time / speed;
-        transform.localScale = new Vector3(SineAmount(cycle), CoseAmount(cycle), SineAmount(cycle));
-    }
+        transform.localScale = new Vector3();
 
+    }
     private float CoseAmount(float cycle)
     {
         return magniute * Mathf.Cos(Time.time * speed);
@@ -29,4 +31,5 @@ public class sin : MonoBehaviour
         return magniute * Mathf.Sin(Time.time * speed);
 
     }
+
 }
