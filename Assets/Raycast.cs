@@ -9,17 +9,13 @@ public class Raycast : MonoBehaviour
     Ray ray;
     float maxDistance = 100;
 
-    RaycastHit[] hits;
+    RaycastHit hit;
     // Start is called before the first frame update
-    void Start()
-    {
-        ray = new Ray(transform.position, transform.forward); //اقدر اقول رايت او فوروارد
-        CheckForColliders();
-    }
+
 
     void CheckForColliders()
     {
-        if (Physics.Raycast(ray, out RaycastHit hit, maxDistance, 1 << 9, QueryTriggerInteraction.Ignore)) // بغير layertohit  لارقام تسعه اكبر من واحدة, وحذفت الببلك حقت الليرماسك
+        if (Physics.Raycast(ray, out hit, maxDistance)) // بغير layertohit  لارقام تسعه اكبر من واحدة, وحذفت الببلك حقت الليرماسك
         {
             Debug.Log(hit.collider.gameObject.name + "something was hit!");
         }
@@ -28,6 +24,9 @@ public class Raycast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        ray = new Ray(transform.position, transform.forward); //اقدر اقول رايت او فوروارد
+        CheckForColliders();
 
     }
 }

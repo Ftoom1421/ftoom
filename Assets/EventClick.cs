@@ -13,11 +13,11 @@ public class EventClick : MonoBehaviour
 
         materialApplier = GetComponent<MaterialApplier>();
     }
-    public void OnPointerDown(pointerEventData)
+    public void OnPointerDown(pointerEventData eventData)
     {
         materialApplier.ApplyOther();
     }
-    public void OnPointerUp(PointerEventData)
+    public void OnPointerUp(PointerEventData eventData)
     {
         materialApplier.ApplyOriginal();
     }
