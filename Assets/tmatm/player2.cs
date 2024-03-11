@@ -41,7 +41,7 @@ public class player2 : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Shoot();
+            //Shoot();
             //Instantiate(bullet, bulletspown.position, Quaternion.identity);
 
         }
@@ -58,9 +58,9 @@ public class player2 : MonoBehaviour
 
 
     }
-    private void Shoot()
-    {
-        Instantiate(bullet, bulletspown.position, Quaternion.identity);
-    }
+    //private IEnumerator Shoot()  
+
+    //Instantiate(bullet, bulletspown.position, Quaternion.identity);
+
 
 }
