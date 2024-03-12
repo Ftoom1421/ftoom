@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bullet2 : MonoBehaviour
 {
     private Rigidbody rb;
+
+
+
 
 
     // Start is called before the first frame update
@@ -23,13 +27,29 @@ public class Bullet2 : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+
+
+        switch (collision.gameObject.tag)
+        {
+            case "Player":
+                Destroy(collision.gameObject);
+                break;
+            case "enemy":
+                Destroy(collision.gameObject);
+                break;
+            default:
+                Destroy(gameObject);
+                break;
+
+        }
+
 
         //Destroy(collision.gameObject.tag);
-        if (collision.gameObject.tag == "enemy")
-        {
-            Destroy(collision.gameObject);
-        }
+        // if (collision.gameObject.tag == "enemy")
+        // {
+        // Destroy(collision.gameObject);
+
+        //if 
 
 
     }
