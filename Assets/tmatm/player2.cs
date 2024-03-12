@@ -41,8 +41,8 @@ public class player2 : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            //Shoot();
-            //Instantiate(bullet, bulletspown.position, Quaternion.identity);
+
+            StartCoroutine(Shoot());
 
         }
         if (moving == false)
@@ -58,9 +58,15 @@ public class player2 : MonoBehaviour
 
 
     }
-    //private IEnumerator Shoot()  
+    private IEnumerator Shoot()
+    {
 
-    //Instantiate(bullet, bulletspown.position, Quaternion.identity);
-
+        Instantiate(bullet, bulletspown.position, Quaternion.identity);
+        yield return new WaitForSeconds(0.25f);
+        Instantiate(bullet, bulletspown.position, Quaternion.identity);
+        yield return new WaitForSeconds(0.25f);
+        Instantiate(bullet, bulletspown.position, Quaternion.identity);
+        yield return new WaitForSeconds(0.25f);
+    }
 
 }
