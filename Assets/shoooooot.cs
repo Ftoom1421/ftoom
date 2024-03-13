@@ -48,9 +48,7 @@ public class العدةو : MonoBehaviour
             Destroy(bulletObj, 1f);
         }
         // Update is called once per frame
-        void Update()
-        {
-        }
+        
     }
 }
 
