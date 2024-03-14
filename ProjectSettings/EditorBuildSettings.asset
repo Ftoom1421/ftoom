@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/MENU.unity
     guid: a8614430dd7199540b1d280f90f999af
   - enabled: 1
-    path: Assets/Scenes/designAbdu.unity
-    guid: 73580a5c8a2f0e744b9cdfa6e18ec13b
-  - enabled: 1
     path: Assets/Scenes/FirstWorld.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/tmtom.unity
     guid: b52b053f61bfe524595dc7d3b4adb59c
+  - enabled: 1
+    path: Assets/Scenes/designAbdu.unity
+    guid: 73580a5c8a2f0e744b9cdfa6e18ec13b
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
