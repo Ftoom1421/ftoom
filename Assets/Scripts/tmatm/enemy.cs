@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
+    [SerializeField] EnemyData data;
     [SerializeField] GameObject bullet;
     [SerializeField] Transform bulletspown;
     // Start is called before the first frame update

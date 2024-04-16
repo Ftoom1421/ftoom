@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2643916996638673609, guid: 5cdc6c32df9074941847f78c8a8b30a2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3721975515050753544, guid: 5cdc6c32df9074941847f78c8a8b30a2, type: 3}
       propertyPath: m_Name
       value: Red ENemy

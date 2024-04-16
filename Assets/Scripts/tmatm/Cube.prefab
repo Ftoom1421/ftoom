@@ -122,8 +122,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf40fe2433ab7744598af113481180d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: ae42ff964e3e5034d8e1ef1719934a1d, type: 2}
   bullet: {fileID: 1924302340631824119, guid: d2c87e94aecb13443a7f263342ae383c, type: 3}
-  bulletspown: {fileID: 216664166991843002}
+  bulletspown: {fileID: 5037465737647718913, guid: 2a406b593f3c4d344b94ed065d27eee5, type: 3}
 --- !u!54 &7609472674965116633
 Rigidbody:
   m_ObjectHideFlags: 0
